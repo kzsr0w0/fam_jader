@@ -5,7 +5,7 @@ import requests
 st.title('Famotidine SE Fearures')
 
 st.sidebar.header('Input Features')
-gender = st.sidebar.slider('gender', min_value=9, max_value=2, step=1)
+gender = st.sidebar.slider('gender', min_value=0, max_value=2, step=1)
 age = st.sidebar.slider('age', min_value=9, max_value=100, step=1)
 bw = st.sidebar.slider('body weight', min_value=9, max_value=170, step=1)
 height = st.sidebar.slider('height', min_value=9, max_value=180, step=1)
