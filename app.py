@@ -26,7 +26,7 @@ if st.sidebar.button("Predict"):
     st.write(jader_df)
 
     # 予測の実行
-    response = requests.post("http://127.0.0.1:8000/make_predictions", json=jader_df)
+    response = requests.post("https://fam-jader.onrender.com", json=jader_df)
     prediction = response.json()["prediction"]
 
     # 予測結果の表示
